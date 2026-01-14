@@ -30,7 +30,7 @@ Ele não apenas troca caracteres simples. Ele é **inteligente**:
 2.  **Rode o Conversor:**
     Abra o terminal na pasta do projeto e execute:
     ```bash
-    python transpilador.py payload.txt
+    python transpilator.py payload.txt
     ```
     *(Dica: Você também pode arrastar o arquivo de texto para cima do script Python se estiver no Windows/Mac).*
 
@@ -60,3 +60,26 @@ CONTROL ALT q  <-- Atalho para fazer a '/'
 CONTROL ALT q  <-- Atalho para fazer a '/'
 STRING google.com
 ENTER
+```
+## Como Usar (Modo Fácil)
+
+### No Windows
+Incluímos um script de automação para facilitar sua vida.
+
+1. Escreva seu payload DuckyScript normalmente em um arquivo `.txt` ou `.ds` (considere que está digitando num teclado americano).
+2. **Arraste e solte** o seu arquivo de texto para cima do arquivo `converter.bat`.
+3. Pronto! Um novo arquivo com o final `_ABNT2.txt` será criado na mesma pasta.
+
+### No Linux ou Mac
+
+1. Dê permissão de execução ao script (apenas na primeira vez):
+   ```bash
+   chmod +x converter.sh
+   ```
+2. Execute passando o arquivo:
+    ```bash
+    ./converter.sh meu_payload.txt
+    ```
+3. Se preferir fazer manualmente:
+    ```bash
+    python transpilator.py payload.txt
